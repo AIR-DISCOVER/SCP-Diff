@@ -161,6 +161,8 @@
           <div class="content has-text-justified">
             <p>
               Semantic image synthesis (SIS) shows good promises for sensor simulation. However, current best practices in this field, based on GANs, have not yet reached the desired level of quality. As latent diffusion models make significant strides in image generation, we are prompted to evaluate ControlNet, a notable method for its dense control capabilities. Our investigation uncovered two primary issues with its results: the presence of weird sub-structures within large semantic areas and the misalignment of content with the semantic mask. Through empirical study, we pinpointed the cause of these problems as a mismatch between the noised training data distribution and the standard normal prior applied at the inference stage. To address this challenge, we developed specific noise priors for SIS, encompassing spatial, categorical, and a novel spatial-categorical joint prior for inference. This approach, which we have named SCP-Diff, has yielded exceptional results, achieving an FID of 10.53 on Cityscapes and 12.66 on ADE20K.
+              <br/><br/> Our code release is undergoing a review process within the company of our co-authors due to regulations.
+              If you meet with problems when trying to reproduce our results or have problems with our implementation, feel free to contact us :)
             </p>
           </div>
         </div>
@@ -191,8 +193,6 @@
           semantic areas. Incorporating the class prior can enhance alignment with the provided semantic masks. By
           jointing spatial and class priors, their beneficial features are combined, allowing our joint prior (SCP-Diff)
           to achieve state-of-the-art results on ADE20K. 
-          <br/><br/> Our code release is undergoing a review process within the company of our co-authors due to regulations.
-           If you meet with problems when trying to reproduce our results or have problems with our implementation, feel free to contact us :)
         </h2>
 
       </div>
